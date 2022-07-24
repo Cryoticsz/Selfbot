@@ -1,0 +1,13 @@
+ ERROR:root:Expecting value: line 2 column 14 (char 15)
+Traceback (most recent call last):
+  File "C:\Users\kiris\Downloads\Cryotic\Cryotic.py", line 675, in <module>
+    if json.load(open("config.json"))["token"] == "":
+  File "C:\Users\kiris\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\kiris\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\kiris\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\kiris\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 14 (char 15)
